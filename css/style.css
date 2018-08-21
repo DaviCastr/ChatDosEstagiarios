@@ -1,0 +1,261 @@
+@media (min-width:600px) {
+    div#Chat {
+        width: 100%;
+        height: 84.8vh;
+        border-radius: 5px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}
+@media (max-width:600px) {
+    div#Chat {
+        width: 100%;
+        height: 350px;
+        border-radius: 5px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}
+[data-estagiario="right"]{
+    margin-right:15px !Important;
+}
+
+div#Chat::-webkit-scrollbar {
+    width: 5px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+div h1.anima {
+    text-align: center;
+    /* font-family: 'Courier New', Courier, monospace;*/
+}
+
+div h1.anima::after {
+    content: '|';
+    margin-left: 5px;
+    animation: pisca 1s infinite;
+}
+
+span.PessoasOnline {
+    width: 100%;
+    text-align: left;
+}
+
+@keyframes pisca {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+img#VisualizarOnlines {
+    width: 11px;
+    height: 11px;
+    margin-bottom:2.7px;
+    position: relative;
+    border-radius:50%; 
+    border:solid rgb(94, 221, 94);
+    background-color:  rgb(94, 221, 94);
+}
+
+img.perfilEstagiario {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+img.perfilLogin {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+div#Chat::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    color: blue;
+    background-color: rgba(1, 1.5, 1, .1);
+}
+
+img.perfil {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+/* form#Login,#Carregar{
+    position: relative !important;
+    margin-top:33%;
+} */
+
+[data-estagiario="right"] {
+    text-align: left;
+}
+
+/* [data-estagiario="left"]{
+    
+} */
+
+form textarea {
+    max-width: 100% !important;
+    min-height: 130px;
+    resize: none;
+}
+form textarea.textarea-mobile{
+    max-width: 100% !important;
+    min-height:auto !important;
+    resize: none;
+    border-radius: 20px;
+}
+div.usuario{
+    background-color: #ccc;
+}
+#PrincipalMobile{
+    border-radius: 5px;
+}
+@media (min-width:600px) {
+    fieldset {
+        height: 85vh;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        border-radius: 5px;
+        max-width: 100%;
+        -webkit-align-items: center;
+        -webkit-justify-content: center;
+        -ms-align-items: center;
+        -ms-justify-content: center;
+    }
+    form#Login {
+        display: block;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        /* margin-top: 20%; */
+    }
+}
+
+@media (max-width:600px) {
+    fieldset {
+        height: auto;
+        display: -ms-flex;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center !important;
+        justify-content: center !important;
+        border-radius: 5px;
+        max-width: 100%;
+        -webkit-align-items: center;
+        -webkit-justify-content: center;
+        -ms-align-items: center;
+        -ms-justify-content: center;
+    }
+}
+
+@media (max-width:600px) {
+    div.MensagemEstagiario {
+        margin-top: 1%;
+        max-width: 98%;
+        width: auto !important;
+        border: solid #ccc;
+        padding: 5px;
+        border-radius: 5px;
+        margin-left: 7px;
+    }
+}
+
+/* div#PessoasOn{
+    height:6vh;
+    border:solid #2196F3;
+    overflow-x: hidden;
+    overflow-y: auto;
+} */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 150px;
+    background-color: #2196F3;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #2196F3 transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+span.badge {
+    border-radius: 50%;
+    background-color: green;
+    width: 12px;
+    height: 12px;
+    margin-top: 5%;
+}
+
+img.imgverde {
+    width: 30px;
+    height: 30px;
+}
+
+img.imgvermelho {
+    width: 15px;
+    height: 15px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+/* div#PessoasOn::-webkit-scrollbar{
+    width: 5px;
+}
+div#PessoasOn::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    color:blue;
+    background-color: rgba(1,1.5,1,.1);
+} */
+
+@media (min-width:600px) {
+    div.MensagemEstagiario {
+        margin-top: 1%;
+        max-width: 90%;
+        width: auto !important;
+        border: solid #ccc;
+        padding: 5px;
+        border-radius: 5px;
+        margin-left: 7px;
+    }
+}
+#MensagemTextarea{
+    width:100%;
+    height:50px;
+    overflow-y:auto;
+    overflow-x: hidden; 
+}

@@ -1,0 +1,1 @@
+|&N->Davi|&M->bem vindo, Comando para apagar mensagens é : /apagarmensagens
